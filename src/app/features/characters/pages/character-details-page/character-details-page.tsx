@@ -36,7 +36,7 @@ export const CharacterDetailsPage = (props: CharacterDetailsPageProps) => {
           Wiki
         </Link>
       </Typography>
-      <Button onClick={handleClickGoBack}>Go Back</Button>
+      <Button onClick={handleClickGoBack}>Go Back To List</Button>
     </DetailsView>
   );
 }

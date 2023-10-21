@@ -28,7 +28,7 @@ export const MovieDetailsPage = (props: MovieDetailsPageProps) => {
       <Typography variant='body1'>Academy award nominations: {movie?.academyAwardNominations}</Typography>
       <Typography variant='body1'>Academy award wins: {movie?.academyAwardWins}</Typography>
       <Typography variant='body1'>Rotten tomatoes score: {movie?.rottenTomatoesScore}</Typography>
-      <Button onClick={handleClickGoBack}>Go Back</Button>
+      <Button onClick={handleClickGoBack}>Go Back To List</Button>
     </DetailsView>
   );
 }
