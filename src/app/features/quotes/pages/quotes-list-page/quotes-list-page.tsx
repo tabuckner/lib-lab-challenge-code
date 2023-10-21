@@ -1,16 +1,20 @@
-import styled from 'styled-components';
+import { ListItem } from '../../../../components/elements';
+import { ListView } from '../../../../components/layout';
+import { useQuotes } from '../../api';
 
 /* eslint-disable-next-line */
 export interface QuotesListPageProps {}
 
-const StyledQuotesListPage = styled.div`
-  color: pink;
-`;
-
 export const QuotesListPage = (props: QuotesListPageProps) =>  {
+  // Dependencies
+  const { isLoading, data: quotes } = useQuotes();
+
+  console.warn(quotes);
+
   return (
-    <StyledQuotesListPage>
-      <h1>Welcome to QuotesListPage!</h1>
-    </StyledQuotesListPage>
+    <ListView
+      isLoading={isLoading}>
+      {quotes?.docs.map(quote => <ListItem key={quote._id} entity={quote} label={quote.dialog} />)}
+    </ListView>
   );
-}
+};

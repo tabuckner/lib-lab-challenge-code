@@ -1,6 +1,10 @@
-import { PaginatedAPIResponse } from "../../../types";
+import { BaseEntity, PaginatedAPIResponse } from "../../../types";
 
-// eslint-disable-next-line @typescript-eslint/ban-types
-export type Quote = {};
+export type Quote = {
+  dialog: string;
+  movie: string;
+  character: string;
+  id: string;
+} & BaseEntity;
 
 export type Quotes = PaginatedAPIResponse<Quote>;
