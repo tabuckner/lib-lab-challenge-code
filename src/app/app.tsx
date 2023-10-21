@@ -1,9 +1,9 @@
-import { Navigate, Route } from 'react-router-dom';
 import { StyledApp } from './app.styles';
+import { AppRoutes } from './app.routes';
 import { BooksRoutes } from './features/books';
 import { HomeRoutes } from './features/home';
-import { AppRoutes } from './app.routes';
 import { MoviesRoutes } from './features/movies';
+import { QuotesRoutes } from './features/quotes';
 
 
 export function App() {
@@ -13,6 +13,7 @@ export function App() {
       <HomeRoutes />
       <BooksRoutes />
       <MoviesRoutes />
+      <QuotesRoutes />
     </StyledApp>
   );
 }
