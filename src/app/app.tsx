@@ -1,11 +1,6 @@
-import styled from 'styled-components';
-
+import { StyledApp } from './app.styles';
 import NxWelcome from './nx-welcome';
 import { Button } from '@mui/material';
-
-const StyledApp = styled.div`
-  // Your style here
-`;
 
 export function App() {
   return (
