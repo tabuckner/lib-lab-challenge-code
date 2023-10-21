@@ -4,6 +4,7 @@ import { BooksRoutes } from './features/books';
 import { HomeRoutes } from './features/home';
 import { MoviesRoutes } from './features/movies';
 import { QuotesRoutes } from './features/quotes';
+import { CharactersRoutes } from './features/characters';
 
 
 export function App() {
@@ -14,6 +15,7 @@ export function App() {
       <BooksRoutes />
       <MoviesRoutes />
       <QuotesRoutes />
+      <CharactersRoutes />
     </StyledApp>
   );
 }
