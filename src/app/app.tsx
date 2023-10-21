@@ -3,6 +3,7 @@ import { StyledApp } from './app.styles';
 import { BooksRoutes } from './features/books';
 import { HomeRoutes } from './features/home';
 import { AppRoutes } from './app.routes';
+import { MoviesRoutes } from './features/movies';
 
 
 export function App() {
@@ -11,6 +12,7 @@ export function App() {
       <AppRoutes />
       <HomeRoutes />
       <BooksRoutes />
+      <MoviesRoutes />
     </StyledApp>
   );
 }
