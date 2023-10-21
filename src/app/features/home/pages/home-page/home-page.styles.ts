@@ -1,16 +1,14 @@
 import styled from 'styled-components';
 
-export const StyledHomePage = styled.div``;
-
-export const StyledMain = styled.main`
-  display: flex;
+export const StyledHomePage = styled.div`
+ display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 3rem;
 `;
 
 export const CardsContainer = styled.div`
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

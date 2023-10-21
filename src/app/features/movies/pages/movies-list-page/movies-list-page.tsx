@@ -1,16 +1,18 @@
-import styled from 'styled-components';
+import { ListView } from '../../../../components/layout';
+import { useMovies } from '../../api';
+import { MovieListItem } from '../../components';
+import { StyledMoviesListPage } from './movies-list.styles';
 
 /* eslint-disable-next-line */
-export interface MoviesListPageProps {}
-
-const StyledMoviesListPage = styled.div`
-  color: pink;
-`;
+export interface MoviesListPageProps { }
 
 export const MoviesListPage = (props: MoviesListPageProps) => {
+  // Dependencies
+  const { isLoading, data } = useMovies();
+
   return (
     <StyledMoviesListPage>
-      <h1>Welcome to MoviesListPage!</h1>
+      <ListView isLoading={isLoading}>{data?.docs.map(movie => <MovieListItem key={movie._id} movie={movie} />)}</ListView>
     </StyledMoviesListPage>
   );
 }

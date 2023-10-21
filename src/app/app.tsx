@@ -1,4 +1,4 @@
-import { StyledApp } from './app.styles';
+import { AppShell } from './components/layout';
 import { AppRoutes } from './app.routes';
 import { BooksRoutes } from './features/books';
 import { HomeRoutes } from './features/home';
@@ -9,14 +9,14 @@ import { CharactersRoutes } from './features/characters';
 
 export function App() {
   return (
-    <StyledApp>
+    <AppShell>
       <AppRoutes />
       <HomeRoutes />
       <BooksRoutes />
       <MoviesRoutes />
       <QuotesRoutes />
       <CharactersRoutes />
-    </StyledApp>
+    </AppShell>
   );
 }
 
