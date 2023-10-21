@@ -1,12 +1,13 @@
 import { StyledApp } from './app.styles';
-import NxWelcome from './nx-welcome';
-import { Button } from '@mui/material';
+import { BooksRoutes } from './features/books';
+import { HomeRoutes } from './features/home';
+
 
 export function App() {
   return (
     <StyledApp>
-      <Button variant="outlined">Outlined</Button>
-      <NxWelcome title="the-one-api-fe" />
+      <HomeRoutes />
+      <BooksRoutes />
     </StyledApp>
   );
 }
