@@ -1,5 +1,5 @@
 import Typography from '@mui/material/Typography';
-import { CardsContainer, StyledHomePage} from "./home-page.styles";
+import { CardsContainer, StyledHomePage } from './home-page.styles';
 import { APIRoute } from '../../types';
 import { ApiRouteCard } from '../../components';
 import { useNavigate } from 'react-router-dom';
@@ -9,10 +9,10 @@ export const HomePage = () => {
   // Dependencies
   const navigate = useNavigate();
 
-  // Handlers 
+  // Handlers
   const handleAPIRouteCardClick = (nextAPIRoute: APIRoute) => {
     navigate(`/${nextAPIRoute.appRoute}`);
-  }
+  };
 
   return (
     <StyledHomePage>
@@ -20,8 +20,14 @@ export const HomePage = () => {
         Welcome to The One API Browser!
       </Typography>
       <CardsContainer>
-        {API_ROUTES.map(apiRoute => <ApiRouteCard key={apiRoute.appRoute} apiRoute={apiRoute} onClick={handleAPIRouteCardClick} />)}
+        {API_ROUTES.map((apiRoute) => (
+          <ApiRouteCard
+            key={apiRoute.appRoute}
+            apiRoute={apiRoute}
+            onClick={handleAPIRouteCardClick}
+          />
+        ))}
       </CardsContainer>
     </StyledHomePage>
   );
-}
+};

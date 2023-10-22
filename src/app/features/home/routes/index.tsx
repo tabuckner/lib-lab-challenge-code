@@ -8,6 +8,6 @@ export const HOME_ROUTES = {
 export const homeRoutes: Array<RouteObject> = [
   {
     path: HOME_ROUTES.ROOT,
-    element: <HomePage />
-  }
+    element: <HomePage />,
+  },
 ];

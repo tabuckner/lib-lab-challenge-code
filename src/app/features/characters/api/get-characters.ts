@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
-import { Characters } from "../types";
+import { useQuery } from '@tanstack/react-query';
+import { Characters } from '../types';
 
 export const CHARACTERS_QUERY_KEY = 'character';
 

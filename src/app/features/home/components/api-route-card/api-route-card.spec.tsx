@@ -5,7 +5,9 @@ import { API_ROUTES } from '../../constants';
 
 describe('ApiRouteCard', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<ApiRouteCard apiRoute={API_ROUTES[0]} onClick={() => true} />);
+    const { baseElement } = render(
+      <ApiRouteCard apiRoute={API_ROUTES[0]} onClick={() => true} />
+    );
     expect(baseElement).toBeTruthy();
   });
 });

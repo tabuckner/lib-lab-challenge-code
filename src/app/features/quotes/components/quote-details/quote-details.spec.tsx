@@ -14,7 +14,7 @@ describe('QuoteDetails', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
       <QueryClientProvider client={mockAppQueryClient}>
-        <QuoteDetails quoteID='test' />
+        <QuoteDetails quoteID="test" />
       </QueryClientProvider>
     );
     expect(baseElement).toBeTruthy();

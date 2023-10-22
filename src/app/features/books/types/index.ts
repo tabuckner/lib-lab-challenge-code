@@ -1,4 +1,4 @@
-import { BaseEntity, PaginatedAPIResponse } from "../../../types";
+import { BaseEntity, PaginatedAPIResponse } from '../../../types';
 
 export type Book = {
   name: string;

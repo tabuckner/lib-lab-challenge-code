@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
-import { Quotes } from "../types";
+import { useQuery } from '@tanstack/react-query';
+import { Quotes } from '../types';
 
 export const QUOTES_QUERY_KEY = 'quote';
 

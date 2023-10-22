@@ -1,4 +1,10 @@
-import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Typography,
+} from '@mui/material';
 import { APIRoute } from '../../types';
 
 /* eslint-disable-next-line */
@@ -11,7 +17,7 @@ export const ApiRouteCard = ({ apiRoute, onClick }: ApiRouteCardProps) => {
   // Handlers
   const handleClick = () => {
     onClick(apiRoute);
-  }
+  };
 
   return (
     <Card sx={{ minWidth: 275 }}>
@@ -24,8 +30,10 @@ export const ApiRouteCard = ({ apiRoute, onClick }: ApiRouteCardProps) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={handleClick}>Browse</Button>
+        <Button size="small" onClick={handleClick}>
+          Browse
+        </Button>
       </CardActions>
     </Card>
   );
-}
+};

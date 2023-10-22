@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
-import { Books } from "../types";
+import { useQuery } from '@tanstack/react-query';
+import { Books } from '../types';
 
 export const BOOKS_QUERY_KEY = 'book';
 

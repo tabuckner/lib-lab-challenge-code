@@ -1,4 +1,4 @@
-import { QueryClient } from "@tanstack/react-query";
+import { QueryClient } from '@tanstack/react-query';
 
 const API_BASE_URL = 'https://the-one-api.dev/v2';
 // TODO: Store as env var.
@@ -9,8 +9,8 @@ export const appQueryClient = new QueryClient({
     queries: {
       queryFn: async ({ queryKey: [url] }) => {
         const response = await fetch(`${API_BASE_URL}/${url}`, {
-          headers: { Authorization: `Bearer ${API_TOKEN}` }
-        })
+          headers: { Authorization: `Bearer ${API_TOKEN}` },
+        });
         return response.json();
       },
     },
@@ -25,4 +25,4 @@ export const mockAppQueryClient = new QueryClient({
       },
     },
   },
-})
+});

@@ -12,4 +12,4 @@ export const StyledMain = styled.main`
 
 export const StyledBrand = styled(Typography)`
   cursor: pointer;
-`
+`;

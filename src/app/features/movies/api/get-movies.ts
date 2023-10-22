@@ -1,5 +1,5 @@
-import { useQuery } from "@tanstack/react-query";
-import { Movies } from "../types";
+import { useQuery } from '@tanstack/react-query';
+import { Movies } from '../types';
 
 export const MOVIES_QUERY_KEY = 'movie';
 

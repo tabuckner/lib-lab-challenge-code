@@ -3,7 +3,7 @@ import { Button } from '@mui/material';
 import { useBooks } from '../../api';
 
 /* eslint-disable-next-line */
-export interface BooksListProps { }
+export interface BooksListProps {}
 
 export const BooksList = (props: BooksListProps) => {
   // Queries
@@ -16,4 +16,4 @@ export const BooksList = (props: BooksListProps) => {
       {!isPending && !isFetching && !error ? JSON.stringify(data) : null}
     </StyledBooksList>
   );
-}
+};

@@ -4,7 +4,13 @@ import { DetailsView } from './details-view';
 
 describe('DetailsView', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<DetailsView actions={<div></div>} children={<div></div>} isLoading={false} />);
+    const { baseElement } = render(
+      <DetailsView
+        actions={<div></div>}
+        children={<div></div>}
+        isLoading={false}
+      />
+    );
     expect(baseElement).toBeTruthy();
   });
 });

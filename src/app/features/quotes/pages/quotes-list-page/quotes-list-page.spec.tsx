@@ -7,9 +7,9 @@ import { mockAppQueryClient } from '../../../../../client';
 describe('QuotesListPage', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
-    <QueryClientProvider client={mockAppQueryClient}>
-      <QuotesListPage />
-    </QueryClientProvider>
+      <QueryClientProvider client={mockAppQueryClient}>
+        <QuotesListPage />
+      </QueryClientProvider>
     );
     expect(baseElement).toBeTruthy();
   });

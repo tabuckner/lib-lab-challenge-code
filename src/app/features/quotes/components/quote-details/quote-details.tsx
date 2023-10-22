@@ -1,12 +1,12 @@
-import { Button, Typography } from "@mui/material";
-import { RelatedResourceSection } from "../../../../components/elements";
-import { DetailsView } from "../../../../components/layout";
-import { CharacterDetails } from "../../../characters/components";
-import { MovieDetails } from "../../../movies/components";
-import { useQuote } from "../../api/get-quote";
-import { MOVIES_ROUTES } from "../../../movies";
-import { useNavigate } from "react-router-dom";
-import { CHARACTERS_ROUTES } from "../../../characters";
+import { Button, Typography } from '@mui/material';
+import { RelatedResourceSection } from '../../../../components/elements';
+import { DetailsView } from '../../../../components/layout';
+import { CharacterDetails } from '../../../characters/components';
+import { MovieDetails } from '../../../movies/components';
+import { useQuote } from '../../api/get-quote';
+import { MOVIES_ROUTES } from '../../../movies';
+import { useNavigate } from 'react-router-dom';
+import { CHARACTERS_ROUTES } from '../../../characters';
 
 /* eslint-disable-next-line */
 export interface QuoteDetailsProps {

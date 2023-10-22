@@ -4,7 +4,7 @@ import { useGetIDFromRoute } from '../../../../hooks';
 import { QuoteDetails } from '../../components';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface QuoteDetailsPageProps { }
+export interface QuoteDetailsPageProps {}
 
 export const QuoteDetailsPage = (props: QuoteDetailsPageProps) => {
   // Dependencies
@@ -16,7 +16,5 @@ export const QuoteDetailsPage = (props: QuoteDetailsPageProps) => {
     navigate(`/${QUOTES_ROUTES.ROOT}`);
   };
 
-  return (
-    <QuoteDetails quoteID={quoteID} onGoBack={handleClickGoBack} />
-  );
+  return <QuoteDetails quoteID={quoteID} onGoBack={handleClickGoBack} />;
 };

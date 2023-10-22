@@ -18,5 +18,5 @@ export const AppRoutes = () => {
     ...charactersRoutes,
   ]);
 
-  return appRoutesElement
+  return appRoutesElement;
 };

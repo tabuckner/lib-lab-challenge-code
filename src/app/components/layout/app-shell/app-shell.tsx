@@ -15,7 +15,7 @@ export const AppShell = ({ children }: AppShellProps) => {
   // Handlers
   const handleClick = () => {
     return navigate(`/${HOME_ROUTES.ROOT}`);
-  }
+  };
 
   return (
     <StyledAppShell>
@@ -28,9 +28,7 @@ export const AppShell = ({ children }: AppShellProps) => {
           <StyledBrand onClick={handleClick}>Home</StyledBrand>
         </Toolbar>
       </AppBar>
-      <StyledMain>
-        {children}
-      </StyledMain>
+      <StyledMain>{children}</StyledMain>
     </StyledAppShell>
   );
 };

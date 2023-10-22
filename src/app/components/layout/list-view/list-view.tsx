@@ -14,4 +14,4 @@ export const ListView = ({ isLoading, children }: ListViewProps) => {
       {isLoading ? <CircularProgress /> : children}
     </StyledListView>
   );
-}
+};

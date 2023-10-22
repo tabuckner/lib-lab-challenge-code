@@ -1,6 +1,6 @@
-import { CircularProgress } from "@mui/material";
-import { ReactNode } from "react";
-import { ActionsRow, StyledDetailsView } from "./details-view.styles";
+import { CircularProgress } from '@mui/material';
+import { ReactNode } from 'react';
+import { ActionsRow, StyledDetailsView } from './details-view.styles';
 
 /* eslint-disable-next-line */
 export interface DetailsViewProps {
@@ -9,10 +9,13 @@ export interface DetailsViewProps {
   actions: ReactNode;
 }
 
-export const DetailsView = ({ isLoading, children, actions }: DetailsViewProps) => {
-
+export const DetailsView = ({
+  isLoading,
+  children,
+  actions,
+}: DetailsViewProps) => {
   if (isLoading) {
-    return <CircularProgress />
+    return <CircularProgress />;
   }
 
   if (!children && !isLoading) {
@@ -22,9 +25,7 @@ export const DetailsView = ({ isLoading, children, actions }: DetailsViewProps) 
   return (
     <StyledDetailsView>
       {children}
-      <ActionsRow>
-        {actions}
-      </ActionsRow>
+      <ActionsRow>{actions}</ActionsRow>
     </StyledDetailsView>
   );
-}
+};

@@ -1,6 +1,6 @@
-import { Typography } from "@mui/material";
-import { ReactNode } from "react";
-import { StyledRelatedResourceSection } from "./related-resource-section.styles";
+import { Typography } from '@mui/material';
+import { ReactNode } from 'react';
+import { StyledRelatedResourceSection } from './related-resource-section.styles';
 
 interface RelatedResourceSectionProps {
   label: string;
@@ -13,7 +13,9 @@ export const RelatedResourceSection = ({
 }: RelatedResourceSectionProps) => {
   return (
     <StyledRelatedResourceSection>
-      <Typography variant="h5" gutterBottom>{label}</Typography>
+      <Typography variant="h5" gutterBottom>
+        {label}
+      </Typography>
       {children}
     </StyledRelatedResourceSection>
   );

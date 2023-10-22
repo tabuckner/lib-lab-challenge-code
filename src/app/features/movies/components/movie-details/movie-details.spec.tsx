@@ -8,7 +8,7 @@ describe('MovieDetails', () => {
   it('should render successfully', () => {
     const { baseElement } = render(
       <QueryClientProvider client={mockAppQueryClient}>
-        <MovieDetails movieID='test' onGoBack={() => true} />
+        <MovieDetails movieID="test" onGoBack={() => true} />
       </QueryClientProvider>
     );
     expect(baseElement).toBeTruthy();

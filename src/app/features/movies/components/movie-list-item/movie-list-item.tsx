@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 import { Movie } from '../../types';
-import { Button, Card, CardActions, CardContent, Typography } from '@mui/material';
+import {
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Typography,
+} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 /* eslint-disable-next-line */
@@ -19,8 +25,8 @@ export const MovieListItem = ({ movie }: MovieListItemProps) => {
 
   // Handlers
   const handleClick = () => {
-    navigate(`./${movie._id}`)
-  }
+    navigate(`./${movie._id}`);
+  };
 
   return (
     <StyledMovieListItem>
@@ -28,13 +34,13 @@ export const MovieListItem = ({ movie }: MovieListItemProps) => {
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {movie.name}
         </Typography>
-        <Typography variant="h5" component="div">
-        </Typography>
+        <Typography variant="h5" component="div"></Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={handleClick}>Go To Details</Button>
+        <Button size="small" onClick={handleClick}>
+          Go To Details
+        </Button>
       </CardActions>
-
     </StyledMovieListItem>
   );
-}
+};

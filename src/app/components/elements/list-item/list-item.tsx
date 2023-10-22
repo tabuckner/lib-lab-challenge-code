@@ -14,8 +14,8 @@ export const ListItem = ({ label, entity }: ListItemProps) => {
 
   // Handlers
   const handleClick = () => {
-    navigate(`./${entity._id}`)
-  }
+    navigate(`./${entity._id}`);
+  };
 
   return (
     <StyledListItem>
@@ -23,13 +23,13 @@ export const ListItem = ({ label, entity }: ListItemProps) => {
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {label}
         </Typography>
-        <Typography variant="h5" component="div">
-        </Typography>
+        <Typography variant="h5" component="div"></Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={handleClick}>Go To Details</Button>
+        <Button size="small" onClick={handleClick}>
+          Go To Details
+        </Button>
       </CardActions>
-
     </StyledListItem>
   );
 };
