@@ -4,7 +4,7 @@ import { Typography, Button } from "@mui/material";
 import { DetailsView } from "../../../../components/layout";
 import { useGetIDFromRoute } from "../../../../hooks";
 import { useQuote } from "../../api/get-quote";
-import { CHARACTERS_ROUTES, useCharacter } from "../../../characters";
+import { CHARACTERS_ROUTES } from "../../../characters";
 import { MOVIES_ROUTES } from "../../../movies";
 import { Row } from "./quote-details-view.styles";
 
@@ -16,7 +16,6 @@ export const QuoteDetailsPage = (props: QuoteDetailsPageProps) => {
   const navigate = useNavigate();
   const quoteID = useGetIDFromRoute(QUOTES_ROUTES.ROOT)
   const { data: quote, isLoading } = useQuote(quoteID);
-
 
   // Handlers
   const handleClickGoBack = () => {

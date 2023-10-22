@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { CssBaseline, AppBar, Toolbar } from '@mui/material';
+import { CssBaseline, AppBar, Toolbar, Typography } from '@mui/material';
 import { StyledAppShell, StyledBrand, StyledMain } from './app-shell.styles';
 import { useNavigate } from 'react-router-dom';
 import { HOME_ROUTES } from '../../../features/home';
@@ -22,9 +22,10 @@ export const AppShell = ({ children }: AppShellProps) => {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <StyledBrand variant="h6" color="inherit" noWrap onClick={handleClick}>
+          <Typography variant="h6" color="inherit" noWrap marginRight={'1rem'}>
             The One API Browser
-          </StyledBrand>
+          </Typography>
+          <StyledBrand onClick={handleClick}>Home</StyledBrand>
         </Toolbar>
       </AppBar>
       <StyledMain>
