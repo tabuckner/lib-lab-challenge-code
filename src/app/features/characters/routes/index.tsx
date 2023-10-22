@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { RouteObject } from 'react-router-dom';
 import { CharacterDetailsPage, CharactersListPage } from '../pages';
 
 export const CHARACTERS_ROUTES = {
@@ -6,12 +6,13 @@ export const CHARACTERS_ROUTES = {
   DETAILS: ':id',
 };
 
-export const CharactersRoutes = () => {
-  return (
-    <Routes>
-      <Route path={CHARACTERS_ROUTES.ROOT} element={<CharactersListPage />} />
-      <Route path={`${CHARACTERS_ROUTES.ROOT}/${CHARACTERS_ROUTES.DETAILS}`} element={<CharacterDetailsPage />} />
-
-    </Routes>
-  );
-};
+export const charactersRoutes: Array<RouteObject> = [
+  {
+    path: CHARACTERS_ROUTES.ROOT,
+    element: < CharactersListPage />,
+  },
+  {
+    path: `${CHARACTERS_ROUTES.ROOT}/${CHARACTERS_ROUTES.DETAILS}`,
+    element: < CharacterDetailsPage />,
+  },
+];

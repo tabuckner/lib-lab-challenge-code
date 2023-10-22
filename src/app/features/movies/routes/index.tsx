@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { RouteObject } from 'react-router-dom';
 import { MovieDetailsPage, MoviesListPage } from '../pages';
 
 export const MOVIES_ROUTES = {
@@ -6,11 +6,13 @@ export const MOVIES_ROUTES = {
   DETAILS: ':id'
 };
 
-export const MoviesRoutes = () => {
-  return (
-    <Routes>
-      <Route path={MOVIES_ROUTES.ROOT} element={<MoviesListPage />} />
-      <Route path={`${MOVIES_ROUTES.ROOT}/${MOVIES_ROUTES.DETAILS}`} element={<MovieDetailsPage />} />
-    </Routes>
-  );
-};
+export const moviesRoutes: Array<RouteObject> = [
+  {
+    path: MOVIES_ROUTES.ROOT,
+    element: <MoviesListPage />
+  },
+  {
+    path: `${MOVIES_ROUTES.ROOT}/${MOVIES_ROUTES.DETAILS}`,
+    element: <MovieDetailsPage />
+  }
+];

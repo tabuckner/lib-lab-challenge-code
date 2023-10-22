@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { RouteObject } from 'react-router-dom';
 import { QuoteDetailsPage, QuotesListPage } from '../pages';
 
 export const QUOTES_ROUTES = {
@@ -6,11 +6,13 @@ export const QUOTES_ROUTES = {
   DETAILS: ':id'
 };
 
-export const QuotesRoutes = () => {
-  return (
-    <Routes>
-      <Route path={QUOTES_ROUTES.ROOT} element={<QuotesListPage />} />
-      <Route path={`${QUOTES_ROUTES.ROOT}/${QUOTES_ROUTES.DETAILS}`} element={<QuoteDetailsPage />} />
-    </Routes>
-  );
-};
+export const quotesRoutes: Array<RouteObject> = [
+  {
+    path: QUOTES_ROUTES.ROOT,
+    element: < QuotesListPage />,
+  },
+  {
+    path: `${QUOTES_ROUTES.ROOT}/${QUOTES_ROUTES.DETAILS}`,
+    element: < QuoteDetailsPage />,
+  },
+];
