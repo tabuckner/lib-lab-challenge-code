@@ -4,7 +4,7 @@ import { MovieDetails } from './movie-details';
 
 describe('MovieDetails', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<MovieDetails />);
+    const { baseElement } = render(<MovieDetails movieID='test' onGoBack={() => true} />);
     expect(baseElement).toBeTruthy();
   });
 });

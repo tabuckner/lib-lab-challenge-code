@@ -4,7 +4,7 @@ import { QuoteDetails } from './quote-details';
 
 describe('QuoteDetails', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<QuoteDetails />);
+    const { baseElement } = render(<QuoteDetails quoteID='test' />);
     expect(baseElement).toBeTruthy();
   });
 });

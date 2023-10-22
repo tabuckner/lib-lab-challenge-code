@@ -4,7 +4,7 @@ import { RelatedResourceSection } from './related-resource-section';
 
 describe('RelatedResourceSection', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<RelatedResourceSection />);
+    const { baseElement } = render(<RelatedResourceSection children={<div></div>} label='test' />);
     expect(baseElement).toBeTruthy();
   });
 });

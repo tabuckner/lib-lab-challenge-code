@@ -4,7 +4,9 @@ import { ListItem } from './list-item';
 
 describe('ListItem', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<ListItem />);
+    const mockEntity = { _id: 'test' };
+    const mockLabel = 'test'
+    const { baseElement } = render(<ListItem entity={mockEntity} label={mockLabel} />);
     expect(baseElement).toBeTruthy();
   });
 });
