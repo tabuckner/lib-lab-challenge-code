@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import MovieDetails from './movie-details';
+import { MovieDetails } from './movie-details';
 
 describe('MovieDetails', () => {
   it('should render successfully', () => {

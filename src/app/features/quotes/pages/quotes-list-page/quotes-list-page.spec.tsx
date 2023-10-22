@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import QuotesListPage from './quotes-list-page';
+import { QuotesListPage } from './quotes-list-page';
 
 describe('QuotesListPage', () => {
   it('should render successfully', () => {

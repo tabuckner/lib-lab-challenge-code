@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import { BooksList } from './books-list';
+import { { BooksList } } from './books-list';
 
 describe('BooksList', () => {
   it('should render successfully', () => {

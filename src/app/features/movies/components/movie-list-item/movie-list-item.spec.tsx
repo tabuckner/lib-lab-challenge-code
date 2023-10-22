@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import MovieListItem from './movie-list-item';
+import { MovieListItem } from './movie-list-item';
 
 describe('MovieListItem', () => {
   it('should render successfully', () => {

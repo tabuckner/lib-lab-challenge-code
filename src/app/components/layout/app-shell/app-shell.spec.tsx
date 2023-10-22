@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 
-import AppShell from './app-shell';
+import { AppShell } from './app-shell';
 
 describe('AppShell', () => {
   it('should render successfully', () => {
