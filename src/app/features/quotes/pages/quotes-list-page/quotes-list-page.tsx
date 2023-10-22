@@ -9,8 +9,6 @@ export const QuotesListPage = (props: QuotesListPageProps) =>  {
   // Dependencies
   const { isLoading, data: quotes } = useQuotes();
 
-  console.warn(quotes);
-
   return (
     <ListView
       isLoading={isLoading}>
