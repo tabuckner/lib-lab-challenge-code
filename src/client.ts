@@ -15,4 +15,14 @@ export const appQueryClient = new QueryClient({
       },
     },
   },
+});
+
+export const mockAppQueryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      queryFn: async ({ queryKey: [url] }) => {
+        return Promise.resolve(true);
+      },
+    },
+  },
 })

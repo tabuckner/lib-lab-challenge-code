@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
 import { MOVIES_ROUTES } from '../../routes';
+import { useNavigate } from 'react-router-dom';
 import { useGetIDFromRoute } from '../../../../hooks';
 import { MovieDetails } from '../../components';
 
