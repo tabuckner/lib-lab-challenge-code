@@ -1,13 +1,9 @@
-import AppBar from '@mui/material/AppBar';
-import CssBaseline from '@mui/material/CssBaseline';
-import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import { CardsContainer, StyledHomePage, StyledMain } from "./home-page.styles";
+import { CardsContainer, StyledHomePage} from "./home-page.styles";
 import { APIRoute } from '../../types';
 import { ApiRouteCard } from '../../components';
 import { useNavigate } from 'react-router-dom';
 import { API_ROUTES } from '../../constants';
-import { AppShell } from '../../../../components/layout';
 
 export const HomePage = () => {
   // Dependencies

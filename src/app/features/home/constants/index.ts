@@ -1,4 +1,4 @@
-import { BOOKS_QUERY_KEY, BOOKS_ROUTES } from "../../books";
+// import { BOOKS_QUERY_KEY, BOOKS_ROUTES } from "../../books";
 import { CHARACTERS_QUERY_KEY, CHARACTERS_ROUTES } from "../../characters";
 import { MOVIES_QUERY_KEY, MOVIES_ROUTES } from "../../movies";
 import { QUOTES_QUERY_KEY, QUOTES_ROUTES } from "../../quotes";
@@ -20,9 +20,9 @@ export const API_ROUTES: Array<APIRoute> = [
     apiRoute: QUOTES_QUERY_KEY,
     appRoute: QUOTES_ROUTES.ROOT,
   },
-  {
-    displayName: 'Books',
-    apiRoute: BOOKS_QUERY_KEY,
-    appRoute: BOOKS_ROUTES.ROOT,
-  }
+  // {
+  //   displayName: 'Books',
+  //   apiRoute: BOOKS_QUERY_KEY,
+  //   appRoute: BOOKS_ROUTES.ROOT,
+  // }
 ];

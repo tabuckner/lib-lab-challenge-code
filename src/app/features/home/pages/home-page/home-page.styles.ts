@@ -13,4 +13,8 @@ export const CardsContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
 `;

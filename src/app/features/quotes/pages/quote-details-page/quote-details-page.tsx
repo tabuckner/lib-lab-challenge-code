@@ -32,11 +32,14 @@ export const QuoteDetailsPage = (props: QuoteDetailsPageProps) => {
   }
 
   return (
-    <DetailsView isLoading={isLoading}>
+    <DetailsView isLoading={isLoading} actions={
+      <>
+        <Row><Button onClick={handleClickMovie}>Go To Movie</Button></Row>
+        <Row><Button onClick={handleClickCharacter}>Go To Character</Button></Row>
+        <Row><Button onClick={handleClickGoBack}>Go Back To List</Button></Row>
+      </>
+    }>
       <Typography variant='h2' gutterBottom>{quote?.dialog}</Typography>
-      <Row><Button onClick={handleClickMovie}>Go To Movie</Button></Row>
-      <Row><Button onClick={handleClickCharacter}>Go To Character</Button></Row>
-      <Row><Button onClick={handleClickGoBack}>Go Back To List</Button></Row>
     </DetailsView>
   );
 };

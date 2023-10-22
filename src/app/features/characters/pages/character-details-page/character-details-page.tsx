@@ -20,7 +20,9 @@ export const CharacterDetailsPage = (props: CharacterDetailsPageProps) => {
   }
 
   return (
-    <DetailsView isLoading={isLoading}>
+    <DetailsView isLoading={isLoading} actions={
+      <Button onClick={handleClickGoBack}>Go Back To List</Button>
+    }>
       <Typography variant='h2' gutterBottom>{character?.name}</Typography>
       <Typography variant='body1'>Height: {character?.height || 'Unknown'}</Typography>
       <Typography variant='body1'>Race: {character?.race || 'Unknown'}</Typography>
@@ -36,7 +38,6 @@ export const CharacterDetailsPage = (props: CharacterDetailsPageProps) => {
           Wiki
         </Link>
       </Typography>
-      <Button onClick={handleClickGoBack}>Go Back To List</Button>
     </DetailsView>
   );
 }

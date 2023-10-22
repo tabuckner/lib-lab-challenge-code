@@ -20,7 +20,9 @@ export const MovieDetailsPage = (props: MovieDetailsPageProps) => {
   }
 
   return (
-    <DetailsView isLoading={isLoading}>
+    <DetailsView isLoading={isLoading} actions={
+      <Button onClick={handleClickGoBack}>Go Back To List</Button>
+    }>
       <Typography variant='h2' gutterBottom>{movie?.name}</Typography>
       <Typography variant='body1'>Runtime in minutes: {movie?.runtimeInMinutes}</Typography>
       <Typography variant='body1'>Budget in millions: {movie?.budgetInMillions}</Typography>
@@ -28,7 +30,6 @@ export const MovieDetailsPage = (props: MovieDetailsPageProps) => {
       <Typography variant='body1'>Academy award nominations: {movie?.academyAwardNominations}</Typography>
       <Typography variant='body1'>Academy award wins: {movie?.academyAwardWins}</Typography>
       <Typography variant='body1'>Rotten tomatoes score: {movie?.rottenTomatoesScore}</Typography>
-      <Button onClick={handleClickGoBack}>Go Back To List</Button>
     </DetailsView>
   );
 }
