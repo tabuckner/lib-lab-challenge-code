@@ -20,7 +20,7 @@ export const HomePage = () => {
         Welcome to The One API Browser!
       </Typography>
       <CardsContainer>
-        {API_ROUTES.map(apiRoute => <ApiRouteCard apiRoute={apiRoute} onClick={handleAPIRouteCardClick} />)}
+        {API_ROUTES.map(apiRoute => <ApiRouteCard key={apiRoute.appRoute} apiRoute={apiRoute} onClick={handleAPIRouteCardClick} />)}
       </CardsContainer>
     </StyledHomePage>
   );
